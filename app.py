@@ -9,6 +9,7 @@ import time
 import autopy
 
 
+app = Flask(__name__)
 ###########
 
 box = []
@@ -66,7 +67,7 @@ def blurarea(frame,hweb,wweb,InorOut = -1):
     return frame
 
 
-app = Flask(__name__)
+
 
 @app.route("/")
 def index():
